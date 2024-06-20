@@ -66,14 +66,14 @@ This is a **React-based News Portal Application** that displays news articles fe
 
 1. **Install Dependencies**
 
-   ````bash
+   ```bash
 
    npm install
    Running the Application
-   Start the Development Server
 
-   ```bash
+   Start the Development Server-
+
    npm start
 
    The application will be available at http://localhost:3000.
-   ````
+   ```
