@@ -6,7 +6,7 @@ import imageNotFound from "../assets/image-not-found.png";
 
 const ArticleCard = ({ article, theme }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { title, description, link, image_url } = article;
+  const { title, description, image_url } = article;
 
   return (
     <>

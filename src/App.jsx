@@ -6,7 +6,7 @@ import "./styles/App.css";
 
 const App = () => {
   return (
-    <Router basename="/react-news-app">
+    <Router basename="/newsApp-react">
       <div className="app">
         <Routes>
           <Route path="/" element={<HomePage />} />

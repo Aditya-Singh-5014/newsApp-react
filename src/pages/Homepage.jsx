@@ -81,7 +81,7 @@ const HomePage = () => {
       </motion.div>
       <Pagination
         currentPage={page}
-        totalPages={5} // Assuming 5 pages for simplicity
+        totalPages={2} // Limiting pagination to 2 pages
         onPageChange={setPage}
       />
     </div>

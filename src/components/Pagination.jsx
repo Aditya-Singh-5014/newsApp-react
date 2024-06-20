@@ -2,21 +2,39 @@ import React from "react";
 import "../styles/Pagination.css";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
-  const pages = [...Array(totalPages).keys()].map((num) => num + 1);
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      onPageChange(page);
+    }
+  };
 
   return (
     <div className="pagination">
-      {pages.map((page) => (
+      <button
+        className="pagination-button"
+        onClick={() => handlePageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+      >
+        Previous
+      </button>
+      {[...Array(totalPages).keys()].map((_, index) => (
         <button
-          key={page}
+          key={index}
           className={`pagination-button ${
-            currentPage === page ? "active" : ""
+            currentPage === index + 1 ? "active" : ""
           }`}
-          onClick={() => onPageChange(page)}
+          onClick={() => handlePageChange(index + 1)}
         >
-          {page}
+          {index + 1}
         </button>
       ))}
+      <button
+        className="pagination-button"
+        onClick={() => handlePageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+      >
+        Next
+      </button>
     </div>
   );
 };

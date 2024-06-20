@@ -1,4 +1,5 @@
 .theme-toggle {
+  transform: translateY(-50%) !important;
   background: transparent;
   color: inherit;
   border: none;
