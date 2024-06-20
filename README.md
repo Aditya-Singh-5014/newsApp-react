@@ -71,8 +71,11 @@ This is a **React-based News Portal Application** that displays news articles fe
    npm install
    Running the Application
 
-   Start the Development Server-
+   ```
 
+1. **Start the Development Server**
+
+   ```bash
    npm start
 
    The application will be available at http://localhost:3000.
